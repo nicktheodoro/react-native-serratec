@@ -4,36 +4,35 @@ import {View, StyleSheet, StatusBar} from 'react-native';
 const App = () => {
   return (
     <>
-    <StatusBar hidden />
-    <View style={styles.container}>
-      
-      <View style={styles.topBar} />
+      <StatusBar hidden />
+      <View style={styles.container}>
+        <View style={styles.topBar} />
 
-      <View style={styles.square} />
-      <View style={styles.title} />
+        <View style={styles.square} />
+        <View style={styles.title} />
 
-      <View style={styles.text}>
-        <View style={styles.part1} />
-        <View style={styles.part2} />
-      </View>
-      <View style={styles.separator} />
-
-      <View style={styles.containerBoxs}>
-        <View style={styles.containerLine}>
-          <View style={styles.square} />
-          <View style={styles.square} />
-          <View style={styles.square} />
+        <View style={styles.text}>
+          <View style={styles.part1} />
+          <View style={styles.part2} />
         </View>
+        <View style={styles.separator} />
 
-        <View style={styles.containerLine}>
-          <View style={styles.square} />
-          <View style={styles.square} />
-          <View style={styles.square} />
+        <View style={styles.containerBoxs}>
+          <View style={styles.containerLine}>
+            <View style={styles.square} />
+            <View style={styles.square} />
+            <View style={styles.square} />
+          </View>
+
+          <View style={styles.containerLine}>
+            <View style={styles.square} />
+            <View style={styles.square} />
+            <View style={styles.square} />
+          </View>
+
+          <View style={styles.footer} />
         </View>
-
-        <View style={styles.footer} />
       </View>
-    </View>
     </>
   );
 };
@@ -79,7 +78,7 @@ const styles = StyleSheet.create({
   },
   containerBoxs: {
     flex: 1,
-    justifyContent: "space-between"
+    justifyContent: 'space-between',
   },
   containerLine: {
     flexDirection: 'row',
